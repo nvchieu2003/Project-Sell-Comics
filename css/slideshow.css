@@ -1,0 +1,15 @@
+.slide{
+    margin: 0 auto;
+    height: 500px;
+    width: 50%;
+}
+.carousel-indicators{
+    margin-top: 500px;
+}
+
+.carousel-control-prev-icon{
+    margin-top: 350px;
+}
+.carousel-control-next-icon{
+    margin-top: 350px;
+}

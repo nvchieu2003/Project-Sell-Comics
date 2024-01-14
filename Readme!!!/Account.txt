@@ -1,0 +1,8 @@
+Admin 1:
++ Tên đăng nhập: chieuadmin
++ Mật khẩu: 12345
+
+Admin 2:
++ Tên đăng nhập: thuadmin
++ Mật khẩu: 12345
+

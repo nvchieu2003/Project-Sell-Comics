@@ -1,0 +1,38 @@
+footer{
+    margin-top: 18px;
+    background-color:#FFCC33;
+    color: #fff;
+}
+.row{
+    margin-top: 8px;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.boxcenter2{
+    width: 80%;
+    margin: 0 auto;
+}
+.boxfooter1{
+    width: 20%;
+    float: left;
+}
+.boxfooter2{
+    width: 20%;
+    float: left;
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.boxfooter3{
+    width: 60%;
+    float: left;
+}
+.row2{
+    text-align: center;
+}
+.mrbt{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,103 @@
+/*lấy font chữ trên gg*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    /*Căn giữa*/
+    max-width: 1170px;
+    margin: 0 auto;
+}
+body{   
+    font-family: 'Open Sans', sans-serif;/*chèn font chữ từ link gg*/
+    font-size: 14px;
+    color: black;
+    line-height: 1.15;
+}
+.headline{
+    text-align: center;
+    margin: 40px 10px;/*trái phải 10, trên dưới 0*/
+}
+h3{
+    font-size: 18px;
+    color:chocolate;
+    padding: 10px 20px;/*padding trái và phải 10px, trên dưới 20px*/
+    border: 1px solid coral;/*Đóng khung cho thẻ h3*/
+    display: inline-block; /*thu gọn khung lại*/
+    font-weight: 600;
+}
+ul.products{
+    list-style-type: none;
+    display: flex; /*cho hiển thị ngang*/
+    flex-wrap: wrap;/*Xuống hàng nếu hình dài quá màn hình*/
+    justify-content: space-between;/*Giãn khung để hiển thị theo hàng ngang*/
+}
+ul.products li{
+    flex-basis: 25%; /*chia độ rộng màn hình ra làm 4 phần(100% / 4 = 25%) */
+    padding-left: 15px;/*vì kích thước ban đầu là 4 phần 25% cộng thêm 2padding là lớn hơn 100% */
+    padding-right: 15px;
+    box-sizing: border-box; /*càng padding càng thu nhỏ lại cho vừa 4 khung*/
+    margin-bottom: 30px;
+}
+ul.products li img{
+    max-width: 100%; /*Giới hạn cái khung*/
+    height:  auto;
+}
+ul.products li .product-top{
+    position: relative;/*giãn ô mua ngay ra*/
+    overflow: hidden;/*ẩn mua ngay đi*/
+}
+ul.products li .product-top .product-thumb{
+    display: block;
+}
+ul.products li .product-top .product-thumb img{
+    display: block;/*cho phần hình gắn với phần phía dưới*/
+}
+
+
+
+
+ul.products li .product-top a.buy-now{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color:none;
+    color: #fff ;
+    font-size: 30px;
+    
+    padding: 10px, 0px;
+    position: absolute;/*ô mua ngay bị co lại và cần định nghĩa lại thằng product-top ở trên*/
+    width: 100%;
+    bottom: -50px;
+    transition: 0.25s ease-in-out;/*làm chậm hiện mua ngay và dùng hiệu ứng*/
+} 
+ul.products li:hover a.buy-now{
+    bottom: 0px;    
+    padding-bottom:50px ;
+    
+}
+
+
+ul.products li .product-info{
+    padding: 20px, 0px;
+}
+
+ul.products li .product-info a{
+    display: block;/*mỗi thằng một hàng */
+    text-decoration: none;
+}
+ul.products li .product-info a.product-cat{
+    font-size: 11px;
+    color: brown;
+    padding: 3px 0px;
+}
+ul.products li .product-info a.product-name{
+    color: blue;
+    padding: 3px,  0px;
+}
+ul.products li .product-info .product-gia{
+    color:black;
+    padding: 3px,  0px;
+    font-weight: 600;
+}

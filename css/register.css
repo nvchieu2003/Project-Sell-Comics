@@ -1,0 +1,63 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+}
+.box{
+    width: 500px;
+	height:	646px;
+    padding: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*di chuyển phần tử bên trong theo trục xy*/
+    background: #191919;
+    border-radius: 10px;
+	color:#ede7e1;
+	font-size:17px;
+}	
+.box h1{
+    color:#ede7e1;
+    text-transform: uppercase;
+    font-weight: 500;
+	margin-top:5px;
+}
+.box input{
+    border-color: #2ecc71;
+	display:inline-block;
+}
+.gt{
+	font-size:18px	
+}
+.box input[type="text"]{
+	height:25px;	
+	font-size:15px;
+}
+
+.box input[type="password"]{
+	height:23px;	
+}
+.box input::placeholder{
+	padding-left:15px;	
+	color:#CCC;	
+}
+
+.box input[type="submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+	font-size:16px
+}
+
+.box input[type="submit"]:hover{
+    background: #2ecc71;
+}
